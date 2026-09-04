@@ -20,6 +20,9 @@ A comprehensive Discord bot based on the **Seven Deadly Sins** with a trial syst
 - **14 Characters** — Nagito, Akane, Sonia, Fuyuhiko, Kazuichi, Hiyoko, Mikan, Ibuki, Mahiru, Nekomaru, Gundham, Teruteru, Peko, Chiaki
 - **Hope & Despair Versions** — Claim hope first, then convert to despair
 - **Chiaki (Ultimate Gamer)** — Pure hope, no despair version
+- **Named Talent Actions** — Eligible Class 77-B characters keep a signature `!talent_ability`
+- **Multi-Ability Kits** — Use `!talent_kit` to list and activate the additional named Hope/Despair abilities
+- **Protected Legacy Systems** — Despair Sister commands, Izuru's existing abilities, and Chiaki's existing mechanics remain untouched
 
 ### Izuru Kamakura
 - **Izuru Despair** — "How boring..." shock/panic aura, "Who are y-you?" counter
@@ -43,6 +46,24 @@ pip install -r requirements.txt
 export DISCORD_TOKEN="your-token-here"
 python3 seven_sins_bot.py
 ```
+
+### Talent Ability Commands
+
+After claiming an eligible character and choosing a path:
+
+```text
+!talent_ability @target
+!talent_kit
+!talent_kit <ability_key> @target
+```
+
+`!talent_ability` is the original signature action. `!talent_kit` lists the character's additional ability keys and display names. Hybrid-path actions use two targets:
+
+```text
+!talent_kit <ability_key> @ally @enemy
+```
+
+Chiaki and Izuru retain their original ability systems and are intentionally excluded from the added talent-kit layer. The Despair Sister system is also unchanged.
 
 ## Required Bot Permissions
 

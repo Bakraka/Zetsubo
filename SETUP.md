@@ -99,6 +99,21 @@ python seven_sins_bot.py
 | `!pact [@user]` | Propose or view a sin alliance pact |
 | `!marks [@user]` | View marks of insecurity for a member |
 
+### Danganronpa Talent Commands
+
+| Command | Description |
+|---|---|
+| `!characters` | List the Class 77-B Hope/Despair roles and available talent actions |
+| `!claim_hope <character>` | Claim an eligible character's Hope role |
+| `!claim_despair <character>` | Unlock the character's Despair state after claiming Hope |
+| `!choose_path <support\|attack\|hybrid\|tacht\|reverence>` | Select how talent actions manifest |
+| `!talent_ability [@target] [@second_target]` | Use the character's signature talent action |
+| `!talent_kit` | List the active character's additional ability keys and names |
+| `!talent_kit <ability> [@target] [@second_target]` | Use an additional named character ability |
+| `!mycharacter` | View the current character, state, signature action, and added kit |
+
+Talent kits are additive and do not replace existing Sin, virtue, combat, Despair Sister, Izuru, or Chiaki abilities. Chiaki and Izuru intentionally retain their original mechanics.
+
 ### Sin-Specific Trial Commands
 | Command | Sin | Description |
 |---|---|---|
