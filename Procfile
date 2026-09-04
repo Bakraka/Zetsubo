@@ -1,1 +1,0 @@
-worker: python3 seven_sins_bot.py
