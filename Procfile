@@ -1,0 +1,1 @@
+worker: python3 zetsubo_deadly_sins_trial_system.py
